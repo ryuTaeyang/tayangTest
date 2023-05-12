@@ -1,0 +1,249 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+#Pub {
+  width: 1521px;
+  background-color: rgb(253, 249, 249);
+}
+#head {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #ffff;
+}
+.fontSize20px {
+  font-size: 32px;
+  font-weight: 549;
+  padding-top: 2vh;
+}
+.padRinght10px {
+  padding-right: 10px;
+  padding-top: 2vh;
+}
+.font17pt19 {
+  padding-top: 10px;
+  font-size: 17px;
+}
+
+#left {
+  width: 311px;
+  height: 156vh;
+  background-color: rgb(253, 249, 249);
+  float: left;
+}
+
+#center {
+  background-color: rgb(253, 249, 249);
+  text-align: center;
+  float: left;
+  width: 969px;
+  padding-left: 9vw;
+}
+.fontlogo {
+  font-size: 107px;
+  font-weight: 200;
+}
+.borderbox {
+  border-radius: 24px;
+  font-size: 18px;
+  width: 772px;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-around;
+  border: none;
+  margin-top: 55px;
+  background-color: gainsboro;
+}
+.borderboxset {
+  border-radius: 24px;
+  width: 125px;
+
+  position: relative;
+  right: 29px;
+  text-align: center;
+  background-color: gray;
+  color: white;
+  border: none;
+}
+.fa {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  padding-top: 100px;
+  color: #000000;
+  margin-top: 50px;
+  height: 200px;
+  font-size: 84px;
+  background: rgb(239, 238, 238);
+  text-align: center;
+}
+.setbox {
+  padding: 10px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 50px;
+  width: 283px;
+  height: 372px;
+  background-color: rgb(239, 238, 238);
+}
+.setboxspanfontsize {
+  font-size: 34px;
+  font-weight: 500;
+  text-align: start;
+  padding-left: 29px;
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+.setboxtspan1 {
+  font-size: 19px;
+  text-align: start;
+  padding-left: 29px;
+}
+.setboxtspan2 {
+  font-size: 12px;
+  text-align: start;
+  padding-left: 29px;
+  padding-bottom: 14px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+#center2 {
+  width: 969px;
+  height: 757px;
+  padding-left: 9vw;
+  display: flex;
+  float: left;
+  background-color: rgb(253, 249, 249);
+  flex-direction: column;
+}
+
+.center2fontsize {
+  font-size: 35px;
+  font-weight: 500;
+}
+.center2fontsze-2 {
+  padding-top: 10px;
+  font-size: 16px;
+}
+.center2-3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.cneter2margintop {
+  margin-top: 37px;
+}
+.center2margintop2 {
+  margin-top: 12px;
+}
+.font16s {
+  font-size: 19px;
+}
+.fontw100s {
+  font-weight: 100;
+}
+.right {
+  height: 156vh;
+  float: right;
+  background-color: rgb(253, 249, 249);
+}
+
+#foot {
+  width: 100vw;
+
+  clear: left;
+}
+.foot1 {
+  height: 78px;
+  background-color: darkgray;
+  color: lightgray;
+  display: flex;
+  padding-left: 19vw;
+}
+.foot1-2 {
+  border: 0;
+  width: 150px;
+  height: 40px;
+  border-radius: 24px;
+  margin-left: 3vw;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 17px;
+}
+#foot2 {
+  height: 300px;
+  background-color: dimgray;
+}
+.bottomleft {
+  height: 200px;
+  margin-top: 30px;
+  flex-direction: column;
+  padding-left: 13vw;
+  float: left;
+  display: flex;
+  border-right: 1px solid;
+  color: white;
+}
+
+.bottomcenter {
+  height: 200px;
+  margin-top: 30px;
+  flex-direction: column;
+
+  display: flex;
+
+  color: white;
+  float: left;
+}
+.bottomcenter1 {
+  padding-left: 11vw;
+  border-right: 1px solid;
+  height: 161px;
+  padding-right: 5vh;
+  margin-top: 30px;
+}
+#sub {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#sub > input {
+  width: 116px;
+  line-height: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 24px;
+  margin-top: 6vh;
+  margin-right: 16vw;
+}
+
+.bottomleft > span:first-child {
+  font-size: 20px;
+}
+.bottomleft > span:nth-child(2) {
+  padding-top: 3vh;
+  padding-right: 3vw;
+}
+.pad {
+  padding-top: 5vh;
+  padding-left: 3vw;
+}
+.pad2 {
+  padding-top: 6vh;
+}
+
+.lastsp {
+  margin-right: 11vw;
+  margin-top: 16vh;
+  font-size: 11px;
+  color: darkgray;
+}
