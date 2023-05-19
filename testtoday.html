@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let options = {
+      //     title: "Menu",
+      //     width: 100,
+      //     height: 200,
+      //   };
+
+      //   let { height, width, title } = options; // 배열을 순서가 중요하지만 객체는 순서가 중요하지않다
+
+      //   console.log(title); // Menu
+      //   console.log(width); // 100
+      //   console.log(height); // 200
+      // let user = {
+      //   name: "John",
+      //   years: 30,
+      // };
+
+      // let { name, years: age, isAdin = false } = user;
+      // console.log(name);
+      // console.log(age);
+      // console.log(isAdin);
+
+      // let salaries = {
+      //   John: 100,
+      //   Pete: 300,
+      //   Mary: 250,
+      // };
+      // function topSalaries() {
+      //   let max = 0;
+      //   let maxName = null;
+      //   for (const [name, salary] of Object.entries(salaries)) {
+      //     if (max < salary) {
+      //       max = salary;
+      //       maxName = name;
+      //     }
+      //   }
+      //   return maxName;
+      // }
+
+      // let arr = ["tae", "yang"];
+
+      // let [이름, 이름1] = arr;
+      // console.log(이름);
+      // console.log(이름1);
+
+      // let user = {};
+      // [user.name, user.sername] = "taeyang youu".split(" ");
+      // console.log(user.name);
+      // let users = {
+      //   name: "taeyang",
+      //   age: 29,
+      // };
+      // for (let [key, value] of Object.entries(users)) {
+      //   console.log(`${key}:${value}`);
+      // }
+      let [name = "taeyang", surname = "yoo"] = ["sun"];
+      console.log(name);
+      console.log(surname);
+      let options = {
+        title: "menu",
+        width: 100,
+        height: 200,
+      };
+      let { title, width, height } = options;
+      console.log(title);
+      console.log(width);
+      console.log(height);
+
+      let date1 = new Date(2013, 0, 32);
+      let date2 = new Date(2013, 0, 0);
+      console.log(date1);
+      console.log(date2);
+
+      // 2012년 2월 20일, 오전 3시 12분을 나타내는 Date 객체를 만들어보세요(시간대는 로컬).
+
+      // 그리고 console.log 함수를 이용해 생성한 객체를 출력하세요.
+      let D = new Date(2012, 2, 20, 3, 12);
+      console.log(D);
+
+      // 날짜를 입력하면 ‘MO’, ‘TU’, ‘WE’, ‘TH’, ‘FR’, ‘SA’, ‘SU’ 형식으로 요일을 보여주는 함수 getWeekDay(date)를 만들어보세요.
+      function days(date) {
+        let d1 = ["MO", "TU", "WE", "TH", "FR", "SA", "SU"];
+        return d1[date.getDay()];
+      }
+      let day = new Date();
+
+      // date를 기준으로 days일 전 '일’을 반환하는 함수 getDateAgo(date, days)를 만들어보세요,
+
+      // 오늘이 20일이라면 getDateAgo(new Date(), 1)는 19를, getDateAgo(new Date(), 2)는 18을 반환해야 합니다.
+      //
+      // days가 365일 때도 제대로 동작해야 합니다.
+
+      // function getDateAgo(date, days) {
+      //   date.setdate(date.getDate() - days);
+      //   return date.getDate();
+      // }
+      // let day2 = new Date();
+
+      // let date = new Date(2015, 0, 2); // 2015년 1월 2일
+
+      // console.log(getDateAgo(date, 1)); // 1, (2015년 1월 1일)
+      // console.log(getDateAgo(date, 2)); // 31, (2014년 12월 31일)
+      // console.log(getDateAgo(date, 365)); // 2, (2014년 1월 2일)
+
+      //       특정 달의 마지막 일을 반환하는 함수 getLastDayOfMonth(year, month)를 작성해보세요. 반환 값은 30이나 31, 29(2월), 28(2월)이 될 겁니다.
+
+      // 매개변수:
+
+      // year – 숫자 4개로 구성된 연(예: 2012)
+      // month – 월(0부터 11)
+      // 윤년인 2012년의 2월은 29가 반환되어야 합니다. getLastDayOfMonth(2012, 1) = 29
+
+      // function getLastDayOfMonth(year, month) {
+      //   let date = new Date(year, month + 1, 0);
+      //   return date.getDate();
+      // }
+      // console.log(getLastDayOfMonth(2012, 0));
+      // console.log(getLastDayOfMonth(2012, 1));
+      // console.log(getLastDayOfMonth(2013, 1));
+
+      //오늘 하루가 시작된 이후 몇 초나 지났는지 반환하는 함수 getSecondsToday()를 만들어보세요.
+
+      // 현재 시각이 10:00 am이고, 서머타임이 적용되지 않은 경우라면 아래와 같은 결과가 나와야 합니다.
+      // getSecondsToday() == 36000; // (3600 * 10)
+      // function getSecondsToday() {
+      //   let now = new Date();
+      //   let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      //   let diff = now - today;
+      //   return Math.round(diff / 1000);
+      // }
+      // console.log(getSecondsToday());
+
+      //오늘 하루가 끝날 때까지 남은 초를 반환해주는 함수 getSecondsToTomorrow()를 만들어보세요.
+      //   현재 시각이 23:00이라면 아래와 같은 결과가 나와야 합니다.
+      // getSecondsToTomorrow() == 3600;
+      // function getSecondsToTomorrow() {
+      //   let now = new Date();
+
+      //   let tmr = new Date(
+      //     now.getFullYear(),
+      //     now.getMonth(),
+      //     now.getDate() + 1
+      //   );
+      //   let diff = tmr - now;
+      //   return Math.round(diff / 1000);
+      // }
+      // console.log(getSecondsToTomorrow());
+
+      //date를 아래와 같은 형식으로 변경해주는 함수 formatDate(date)를 만들어보세요.
+      // date가 지금으로부터 1초 미만 전의 날짜를 나타내면 "현재"를 반환해야 합니다.
+      // 그렇지 않고, date가 지금으로부터 1분 이하 전의 날짜를 나타내면 "n초 전"을 반환해야 합니다.
+      // 그렇지 않고, date가 지금으로부터 1시간 미만 전의 날짜를 나타내면 "n분 전"을 반환해야 합니다.
+      // 이 외의 경우는 전체 날짜를 "DD.MM.YY HH:mm"형식("일.월.연 시:분")으로 반환해야 합니다(예시: 31.12.16 10:00).
+
+      console.log(formatDate(new Date(new Date() - 1))); // "현재"
+
+      console.log(formatDate(new Date(new Date() - 30 * 1000))); // "30초 전"
+
+      console.log(formatDate(new Date(new Date() - 5 * 60 * 1000))); // "5분 전"
+
+      // 어제를 나타내는 날짜를 "일.월.연 시:분" 포맷으로 출력
+      console.log(formatDate(new Date(new Date() - 86400 * 1000)));
+
+      function formatDate(date) {
+        let diff = new Date() - date; // 차이(ms)
+
+        if (diff < 1000) {
+          // 차이가 1초 미만이라면
+          return "현재";
+        }
+
+        let sec = Math.floor(diff / 1000); // 차이를 초로 변환
+
+        if (sec < 60) {
+          return sec + "초 전";
+        }
+
+        let min = Math.floor(diff / 60000); // 차이를 분으로 변환
+        if (min < 60) {
+          return min + "분 전";
+        }
+
+        // 날짜의 포맷을 변경
+        // 일, 월, 시, 분이 숫자 하나로 구성되어있는 경우, 앞에 0을 추가해줌
+        let d = date;
+        d = [
+          "0" + d.getDate(),
+          "0" + (d.getMonth() + 1),
+          "" + d.getFullYear(),
+          "0" + d.getHours(),
+          "0" + d.getMinutes(),
+        ].map((component) => component.slice(-2)); // 모든 컴포넌트의 마지막 숫자 2개를 가져옴
+
+        // 컴포넌트를 조합
+        return d.slice(0, 3).join(".") + " " + d.slice(3).join(":");
+      }
+
+      console.log(formatDate(new Date(new Date() - 1))); // "현재"
+
+      console.log(formatDate(new Date(new Date() - 30 * 1000))); // "30초 전"
+
+      console.log(formatDate(new Date(new Date() - 5 * 60 * 1000))); // "5분 전"
+
+      // 어제의 날짜를 31.12.2016 20:00 형태로 출력
+      console.log(formatDate(new Date(new Date() - 86400 * 1000)));
+
+      let calendar = new Date();
+      function c1(){
+        calendar = new Date(calendar.getFullYear()-)
+      }
+    </script>
+  </body>
+</html>

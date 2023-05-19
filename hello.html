@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <style>
+      /* css 변수
+      정적
+      동적
+      -가변 : 넓이를 모두 % (해당넓이 / 전체 넓이 * 100)
+      -반응 : 미디어 쿼리
+           */
+      :root {
+        /* --mar-Bottom-5px: 5px; */
+        --mar-bottom-5px: 0.52%;
+        --light-gray: rgb(176, 176, 176);
+      }
+      body {
+        margin: 8px;
+      }
+      .wrap {
+        /* width: 960px; */
+        width: 100%;
+        margin: 0 auto;
+      }
+      .wrap > div:first-child {
+        height: 100px;
+
+        text-align: center;
+        line-height: 100px;
+        font-size: 52px;
+        font-weight: bold;
+        background-color: var(--light-gray);
+        margin-bottom: var(--mar-Bottom-5px);
+      }
+
+      .wrap > div:nth-child(2)::after {
+        clear: both;
+        content: "";
+        display: table;
+        /* overflow: hidden; */
+      }
+      .wrap > div:nth-child(2) > div {
+        background-color: var(--light-gray);
+
+        float: left;
+      }
+      .wrap > div:nth-child(2) > div:first-child {
+        /* width: 250px; */
+        width: 26.04%;
+        margin-right: var(--mar-Bottom-5px);
+      }
+      .wrap > div:nth-child(2) > div:nth-child(2) {
+        /* width: 500px; */
+        width: 52.08%;
+        margin-right: var(--mar-Bottom-5px);
+        background-color: transparent;
+        padding: 5px 0;
+      }
+      .wrap > div:nth-child(2) > div:nth-child(2) > div:first-child {
+        height: 50px;
+        margin-bottom: var(--mar-Bottom-5px);
+      }
+      .wrap > div:nth-child(2) > div:nth-child(2) > div:last-child {
+        line-height: 25px;
+      }
+      .wrap > div:nth-child(2) > div:last-child > div > span {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .wrap > div:nth-child(2) > div:last-child > div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* transform: translateY(-50%) translateX(-50%); */
+        transform: translate(-50%, -50%);
+        /* width: 165px; */
+        width: 82.5%;
+      }
+      .wrap > div:nth-child(2) > div:last-child {
+        position: relative;
+        /* width: 200px; */
+        width: 20.83%;
+        height: 215px;
+      }
+      .wrap > div:last-child {
+        height: 150px;
+        text-align: center;
+        background-color: var(--light-gray);
+        margin-top: var(--mar-Bottom-5px);
+      }
+      .wrap > div:nth-child(2) > div:first-child > ul {
+        background-color: white;
+      }
+      .wrap > div:nth-child(2) > div:first-child > ul > li {
+        height: 50px;
+        background-color: var(--light-gray);
+        margin-bottom: var(--mar-Bottom-5px);
+        text-align: center;
+        line-height: 50px;
+      }
+      .wrap > div:nth-child(2) > div:first-child > ul > li:last-child {
+        margin-bottom: 0;
+      }
+      @media screen and (max-width: 750px) {
+        .wrap > div:nth-child(2) > div {
+          float: none;
+          width: 100% !important;
+        }
+        .wrap > div:first-child,
+        .wrap > div:nth-child(2) > div:first-child > ul > li,
+        .wrap > div:nth-child(2) > div {
+          margin-bottom: 5px;
+
+          text-align: center;
+        }
+        .wrap > div:first-child {
+          font-size: 8vw;
+        }
+      }
+      @media screen and (max-width: 320px) {
+        .wrap > div :nth-child(2) > div:first-child {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div>Hello World</div>
+      <div>
+        <div>
+          <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+            <li>Link 4</li>
+          </ul>
+        </div>
+        <div>
+          <div>Lorum Ipsum</div>
+          <div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat.
+          </div>
+        </div>
+        <div>
+          <div>
+            <span>About</span>Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit.
+          </div>
+        </div>
+      </div>
+      <div>© copyright w3schools.com</div>
+    </div>
+  </body>
+</html>
