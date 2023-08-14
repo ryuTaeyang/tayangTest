@@ -1,1 +1,1002 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeadByDaylight</title>
+    <script
+      src="https://kit.fontawesome.com/ae20d15cd7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/dbd.css" />
+    <link rel="stylesheet" href="/dbd1.css" />
+    <link rel="stylesheet" href="/dbd2.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div id="logo">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5A1kkVLW3IQwitQF1xD0ijZeKZuZhomxfYg&usqp=CAU"
+            alt=""
+          />
+        </div>
+        <nav class="headMenu">
+          <div class="navbar">
+            <a href="#home"></a>
+            <div class="subnav">
+              <button class="subnavbtn">
+                About <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="subnav-content">
+                <a href="#Board">Board</a>
+                <a href="#members">Members</a>
+                <a href="#">Home</a>
+              </div>
+            </div>
+            <div class="subnav">
+              <button class="subnavbtn">
+                KILLERS <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="subnav-content">
+                <a href="#deliver">트래퍼</a>
+                <a href="#package">악귀</a>
+                <a href="#express">카니발</a>
+                <a href="#express">쉐이프</a>
+                <a href="#express">해골상인</a>
+              </div>
+            </div>
+            <div class="subnav">
+              <button class="subnavbtn">
+                Contact <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="subnav-content">
+                <a href="https://store.steampowered.com/">스팀</a>
+                <a href="https://deadbydaylight.com/">DeadByDaylight</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section id="centerMneu">
+        <div class="back" style="position: relative">
+          <div class="frist">
+            <img
+              class="dotgu"
+              src="https://i.namu.wiki/i/Ksdt0XOfrtSW1Mu2hB9p9ZLxTwxtMo27r9RBBI2Rcy_peARtm6lLAs2nDqqtRlHAiKqCohgcgMtEt9KVpDQH1g.webp"
+              alt=""
+            />
+
+            <img
+              class="senze"
+              style="top: 5rem; position: absolute; left: 65rem"
+              src="https://i.namu.wiki/i/FqsA4aZ1yk4hXNxoK_hL5Yvm9ibZ-sXrXpR6KA4IlKrVY4iIrjz6O8rbI4Q2lXFtRuuvAM8wYR4c_J0sCkNafg.webp"
+              alt=""
+            />
+          </div>
+          <div class="second">
+            <img
+              class="sickgu"
+              src="https://i.namu.wiki/i/BaXZNcyKqcd1goY3chr1IT-LU7FBFNRZTFWmP4dA6ctEmUOuj3CRGUECA05R_eY7gs6qbQ9PfV6OY5ssCxTiOw.webp"
+              alt=""
+            />
+          </div>
+          <div class="three">
+            <img
+              class="oni"
+              src="https://i.namu.wiki/i/hpQZ69njOU1TGab5wdl4Ln64Z3qOsuukGCUuYHblVVXobfV1JS_UApS6yCfc1RIW-YfaDLn8NOiTsmyi8MLn2Q.webp"
+              alt=""
+            />
+          </div>
+          <div class="four">
+            <img
+              class="jungu"
+              src="https://i.namu.wiki/i/F479GfIXCymiljHhFlEQweMYpPVHufLxuEG66iWEKuBfyhFYs92XZ6j80g4WLtbaKG_faG8Rb2Tjm0MMmOS1KQ.webp"
+              alt=""
+            />
+          </div>
+          <div class="fonts">
+            <span style="color: red" class="D">D</span
+            ><span style="color: red" class="E">E</span
+            ><span style="color: red" class="A">A</span
+            ><span style="color: red" class="D-1">D</span>
+            <span style="color: white" class="B">B</span>
+            <span style="color: white" class="B">Y</span><br />
+            <span style="color: wheat" class="name">DAYLIGHT</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script></script>
+  </body>
+</html>
+
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+.sub_menu {
+  display: none;
+}
+.headMenu ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+.rightHeadMenu > li > a {
+  text-decoration: none;
+  color: white;
+}
+i {
+  cursor: pointer;
+}
+.backColor {
+  background-color: rgb(204 0 0);
+  height: 36px;
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+#logo > img {
+  width: 150px;
+  float: left;
+  height: 100px;
+}
+.floatL {
+  float: left;
+}
+.floatR {
+  float: right;
+}
+.padding2em {
+  padding: 2em;
+}
+.paddingL16 {
+  padding-left: 16em;
+}
+
+header {
+  background-color: black;
+  height: 100px;
+}
+.back {
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/441/726/345/dark-forest-creepy-grave-path-wallpaper-preview.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.frist {
+  position: relative;
+}
+.frist > img {
+  position: absolute;
+  width: 27%;
+  top: 9rem;
+  left: 17rem;
+}
+.dotgu {
+  animation-name: dotgu;
+  animation-duration: 5s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+.senze {
+  top: 8rem;
+  position: absolute;
+  left: 65rem;
+  animation-name: senze;
+  animation-duration: 5s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+.second {
+  position: relative;
+}
+.second > img {
+  width: 30%;
+  position: absolute;
+  top: 24rem;
+  left: 0rem;
+  animation-name: sickgu;
+  animation-duration: 5s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+.three {
+  position: relative;
+}
+.three > img {
+  position: absolute;
+  top: 7rem;
+  left: 22rem;
+  animation-name: oni;
+  animation-duration: 5s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+.four {
+  position: relative;
+}
+.four > img {
+  position: absolute;
+  width: 34%;
+  left: 69rem;
+  top: 16rem;
+  animation-name: jungu;
+  animation-duration: 5s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes oni {
+  0% {
+    opacity: 0.9;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes dotgu {
+  0% {
+    opacity: 0.9;
+    transform: translate3d(10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes senze {
+  0% {
+    opacity: 0.9;
+    transform: translate3d(-10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sickgu {
+  0% {
+    opacity: 0.9;
+    transform: translate3d(30%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes jungu {
+  0% {
+    opacity: 0.9;
+    transform: translate3d(-10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+/* 폰트 */
+.fonts {
+  font-size: 65px;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 48rem;
+}
+.fonts > .D {
+  animation-name: D;
+  animation-delay: 1s;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+@keyframes D {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fonts > .E {
+  animation-name: E;
+  animation-delay: 2s;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+@keyframes E {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fonts > .A {
+  animation-name: A;
+  animation-delay: 3s;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+.fonts > .D-1 {
+  animation-name: D-1;
+  animation-delay: 4s;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+@keyframes D-1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes A {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fonts > .B {
+  animation-name: B;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+@keyframes B {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+.name {
+  animation-name: name;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes name {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    font-size: 60px;
+    color: red;
+  }
+}
+
+/* 드롭다운메뉴 */
+.headMenu > ul > li > a > i {
+  font-size: 20px;
+}
+.mainMenu {
+  display: flex;
+  position: relative;
+  line-height: 100px;
+}
+.mainMenu > li > a {
+  cursor: pointer;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+@media screen and (min-width: 320px) and (max-height: 854px) {
+  header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo > img {
+    width: 200px;
+    height: 100px;
+  }
+  .navbar {
+    width: 100vh;
+  }
+
+  .frist > img {
+    display: none;
+    position: absolute;
+    width: 27%;
+    left: 11rem;
+    top: 11rem;
+  }
+  .sense {
+    display: none;
+    top: 10rem;
+    position: absolute;
+    left: 46rem;
+  }
+  .second > img {
+    display: none;
+    width: 30%;
+    position: absolute;
+    top: 21rem;
+    left: 0rem;
+    animation-name: sickgu;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+  }
+  .three > img {
+    display: none;
+    position: absolute;
+    top: 7rem;
+    width: 60%;
+    left: 12rem;
+    animation-name: oni;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+  }
+  .four > img {
+    display: none;
+    position: absolute;
+    width: 34%;
+    left: 53rem;
+    top: 16rem;
+    animation-name: jungu;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+  }
+  .fonts {
+    font-size: 91px;
+    font-weight: bold;
+    position: absolute;
+    /* text-align: center; */
+    top: 3px;
+    left: 27rem;
+  }
+  .back {
+    background-color: black;
+
+    height: 100vh;
+  }
+}
+/////////////////////
+@media screen and (min-width: 1440px) and (max-height: 854px) {
+  header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .back {
+    ackground-image: url(https://p4.wallpaperbetter.com/wallpaper/441/726/345/dark-forest-creepy-grave-path-wallpaper-preview.jpg);
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .frist > img {
+    display: none;
+  }
+  .second > img {
+    display: none;
+  }
+  .four > img {
+    display: none;
+  }
+  .three > img {
+    display: none;
+  }
+  .fonts {
+    display: none;
+  }
+}
+========================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeadByDaylight</title>
+    <script
+            src="https://kit.fontawesome.com/ae20d15cd7.js"
+            crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/blog.css" />
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <div id="logo">
+            <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5A1kkVLW3IQwitQF1xD0ijZeKZuZhomxfYg&usqp=CAU"
+                    alt=""
+            />
+        </div>
+        <nav class="headMenu">
+            <div class="navbar">
+                <a href="#home"></a>
+                <div class="subnav">
+                    <button class="subnavbtn">
+                        About <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                        <a href="#Board">Board</a>
+                        <a href="#members">Members</a>
+                        <a href="#">Home</a>
+                    </div>
+                </div>
+                <div class="subnav">
+                    <button class="subnavbtn">
+                        KILLERS <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                        <a href="#deliver">트래퍼</a>
+                        <a href="#package">악귀</a>
+                        <a href="#express">카니발</a>
+                        <a href="#express">쉐이프</a>
+                        <a href="#express">해골상인</a>
+                    </div>
+                </div>
+                <div class="subnav">
+                    <button class="subnavbtn">
+                        Contact <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                        <a href="https://store.steampowered.com/">스팀</a>
+                        <a href="https://deadbydaylight.com/">DeadByDaylight</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="centerMneu">
+        <div class="back" style="position: relative">
+            <div class="frist">
+                <img
+                        class="dotgu"
+                        src="https://i.namu.wiki/i/Ksdt0XOfrtSW1Mu2hB9p9ZLxTwxtMo27r9RBBI2Rcy_peARtm6lLAs2nDqqtRlHAiKqCohgcgMtEt9KVpDQH1g.webp"
+                        alt=""
+                />
+ <div class="senze">
+                <img
+                        class="senze"
+
+                        src="https://i.namu.wiki/i/FqsA4aZ1yk4hXNxoK_hL5Yvm9ibZ-sXrXpR6KA4IlKrVY4iIrjz6O8rbI4Q2lXFtRuuvAM8wYR4c_J0sCkNafg.webp"
+                        alt=""
+                />
+ </div>
+            </div>
+            <div class="second">
+                <img
+                        class="sickgu"
+                        src="https://i.namu.wiki/i/BaXZNcyKqcd1goY3chr1IT-LU7FBFNRZTFWmP4dA6ctEmUOuj3CRGUECA05R_eY7gs6qbQ9PfV6OY5ssCxTiOw.webp"
+                        alt=""
+                />
+            </div>
+            <div class="three">
+                <img
+                        class="oni"
+                        src="https://i.namu.wiki/i/hpQZ69njOU1TGab5wdl4Ln64Z3qOsuukGCUuYHblVVXobfV1JS_UApS6yCfc1RIW-YfaDLn8NOiTsmyi8MLn2Q.webp"
+                        alt=""
+                />
+            </div>
+            <div class="four">
+                <img
+                        class="jungu"
+                        src="https://i.namu.wiki/i/F479GfIXCymiljHhFlEQweMYpPVHufLxuEG66iWEKuBfyhFYs92XZ6j80g4WLtbaKG_faG8Rb2Tjm0MMmOS1KQ.webp"
+                        alt=""
+                />
+            </div>
+            <div class="fonts">
+            <span style="color: red" class="D">D</span
+            ><span style="color: red" class="E">E</span
+            ><span style="color: red" class="A">A</span
+            ><span style="color: red" class="D-1">D</span>
+                <span style="color: white" class="B">B</span>
+                <span style="color: white" class="B">Y</span><br />
+                <span style="color: wheat">DAYLIGHT</span>
+            </div>
+        </div>
+    </section>
+</div>
+<script></script>
+</body>
+</html>
+=============================
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+.sub_menu {
+  display: none;
+}
+.headMenu ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+.rightHeadMenu > li > a {
+  text-decoration: none;
+  color: white;
+}
+i {
+  cursor: pointer;
+}
+.backColor {
+  background-color: rgb(204 0 0);
+  height: 36px;
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+#logo > img {
+  width: 150px;
+  float: left;
+  height: 100px;
+}
+.floatL {
+  float: left;
+}
+.floatR {
+  float: right;
+}
+.padding2em {
+  padding: 2em;
+}
+.paddingL16 {
+  padding-left: 16em;
+}
+
+header {
+  background-color: black;
+  height: 100px;
+}
+.back {
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/441/726/345/dark-forest-creepy-grave-path-wallpaper-preview.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.frist {
+  position: relative;
+}
+.frist > img {
+ position: absolute;
+     top: 3rem;
+     left: 10rem;
+     width: 28%;
+}
+.dotgu {
+  animation-name: dotgu;
+  animation-duration: 5s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+
+
+.senze>img {
+    top: 1rem;
+    position: absolute;
+    left: 35rem;
+    width: 30%;
+  animation-name: senze;
+  animation-duration: 5s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+.second {
+  position: relative;
+}
+.second > img {
+  width: 28%;
+  position: absolute;
+    top: 12rem;
+    left: 0rem;
+    animation-name: sickgu;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+  }
+}
+.three {
+  position: relative;
+}
+.three > img {
+  position: absolute;
+    top: 3rem;
+    left: 12rem;
+   width:50%;
+  animation-name: oni;
+  animation-duration: 5s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+.four {
+  position: relative;
+}
+.four > img {
+    position: absolute;
+    width: 30%;
+    left: 39rem;
+    top: 10rem;
+    animation-name: jungu;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes oni {
+  0% {
+    opacity: 0.9;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes dotgu {
+  0% {
+    opacity: 0.9;
+    transform: translate3d(10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes senze {
+  0% {
+    opacity: 0.9;
+    transform: translate3d(-10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sickgu {
+  0% {
+    opacity: 0.9;
+    transform: translate3d(30%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes jungu {
+  0% {
+    opacity: 0.9;
+    transform: translate3d(-10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+/* 폰트 */
+.fonts {
+    font-size: 60px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 23rem;
+}
+.fonts > .D {
+ animation-name: D;
+ animation-delay: 1s;
+ animation-duration: 9s;
+ animation-iteration-count: infinite;
+}
+@keyframes D {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fonts > .E {
+  animation-name: E;
+  animation-delay: 2s;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+@keyframes E {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fonts > .A {
+  animation-name: A;
+  animation-delay: 3s;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+.fonts > .D-1 {
+  animation-name: D-1;
+  animation-delay: 4s;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+@keyframes D-1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes A {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fonts > .B {
+  animation-name: B;
+
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+@keyframes B {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+/* 드롭다운메뉴 */
+.headMenu > ul > li > a > i {
+  font-size: 20px;
+}
+.mainMenu {
+  display: flex;
+  position: relative;
+  line-height: 100px;
+}
+.mainMenu > li > a {
+  cursor: pointer;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
