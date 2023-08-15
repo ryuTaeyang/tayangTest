@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>게시판</title>
+    <style>
+      * {
+        margin: 0 auto;
+        padding: 5px;
+      }
+      #container {
+        display: inline;
+        text-align: center;
+      }
+      .line {
+        border-bottom: 1px solid;
+      }
+      .board_insert {
+        font-size: 18px;
+        font-weight: bold;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="board_logo"></div>
+      <div class="board">
+        <p style="font-size: 20px">자유 게시판</p>
+        <form method="post">
+          <div class="board_title">
+            <table border="1" style="width: 100%; border: none">
+              <tr>
+                <th style="width: 10%">No</th>
+                <th style="width: 40%">제목</th>
+                <th style="width: 10%">글쓴이</th>
+                <th style="width: 20%">작성시간</th>
+              </tr>
+
+              <tr>
+                <th>1</th>
+                <th>공지</th>
+                <th>운영자</th>
+                <th>4</th>
+              </tr>
+            </table>
+          </div>
+          <div class="line"></div>
+          <div class="board_insert">
+            <input type="submit" value="글쓰기" style="width: 200px" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
