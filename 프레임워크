@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테스트</title>
+    <style>
+      * {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <frameset rows="150,*">
+    <frame src="/html공부/html/frame1.html" name="up" noresize></frame>
+    <frameset cols="300,*">
+      <frame src="/html공부/html/frame2.html" name="left" noresize></frame>
+      <frame src="/html공부/html/frame3.html" name="right" noresize></frame>
+    </frameset>
+  </frameset>
+  <body>
+    <h1>안녕</h1>
+  </body>
+</html>
