@@ -21,3 +21,42 @@
     <h1>안녕</h1>
   </body>
 </html>
+==================1
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>첫번째</title>
+  </head>
+  <body bgcolor="=#ffeedd">
+    1st frame
+    <h1>안녕</h1>
+  </body>
+</html>
+========================2
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2번째 프레임</title>
+  </head>
+  <body bgcolor="#ff77ff">
+    2nd fraem
+  </body>
+</html>
+======================================================3
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3번째 프레임</title>
+  </head>
+  <body bgcolor="#ff77ff">
+    3rd frame 즈그이
+  </body>
+</html>
+
+
