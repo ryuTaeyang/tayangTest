@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>테스트 문서</title>
+  <link rel="stylesheet" href="/home.css" />
+  <style>
+      * {
+        margin: 0 auto;
+        padding: 0;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      #nav {
+        height: 40px;
+      }
+      #header {
+        background-color: cornflowerblue;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 70px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      ul {
+        list-style: none;
+        text-align: right;
+      }
+      a :hover {
+        text-decoration: underline;
+        color: skyblue;
+      }
+
+      ul > li > a:hover {
+        text-decoration: underline;
+        color: skyblue;
+      }
+    </style>
+</head>
+<body>
+<th:blcok th:object="${homeForm}">
+<div id="container">
+  <div id="nav" style="width: 50%">
+    <ul class="menu">
+      <li>
+        <a href="#home"><span>블로그</span></a>
+        <a href="#home"><span>로그인</span></a>
+      </li>
+    </ul>
+  </div>
+  <div id="header" style="width: 50%">
+    <p>SunBlog</p>
+  </div>
+  <div>
+    <p
+            style="
+            text-align: center;
+            border-bottom: 1px solid;
+            width: 50%;
+            font-weight: bold;
+            font-size: 30px;
+          "
+    >
+      게시판 글쓰기
+    </p>
+  </div>
+  <form method="post">
+    <div class="title" style="width: 50%; margin-top: 10px">
+      <input
+              type="text"
+              style="width: 90%; height: 40px; font-size: 20px"
+              placeholder="제목을 입력해주세요."
+              autofocus
+      />
+      <input
+              type="submit"
+              value="등록"
+              style="width: 40px; height: 46px"
+      />
+      <textarea
+              placeholder="내용을 입력하세요."
+              autofocus
+              scrolling="no"
+              style="width: 100%; height: 500px; margin-top: 5px; font-size: 30px"
+      ></textarea>
+    </div>
+  </form>
+</div>
+</th:blcok>
+</body>
+</html>
