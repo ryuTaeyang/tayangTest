@@ -169,12 +169,12 @@ public class HomeController {
         model.addAttribute("logout1","로그아웃");
 
         System.out.println(session.getAttribute("user"));
-        System.out.println("값이 맞음");
+        System.out.println(" 자유게시판 =값이 맞음");
 //
 
 //원인을 모를때 깨끗하게
 
-        return "write_do";
+        return "boardPg";
 
     }
 //    자유게시판 목록
@@ -183,14 +183,46 @@ public class HomeController {
     public String writePg(HomeForm homeForm,@Validated LoginForm loginForm, HttpServletRequest httpServletRequest,Model model){
         Home home = new Home();
         home.setNum(homeForm.getNum());
-        home.setId(homeForm.getId());
-        home.setPsw(homeForm.getPsw());
         home.setUser_name(homeForm.getUser_name());
         home.setTitle(homeForm.getTitle());
         home.setContent(homeForm.getContent());
         home.setUser_time(Timestamp.valueOf(LocalDateTime.now()));
-        return "write";
 
+        homeForm.setNewMember(true);
+
+        Iterable<Home> list = service.selectAll();
+        model.addAttribute("list",list);
+
+        return "writePg";
+
+    }
+    @PostMapping("/login/write")
+    public String write_Do(HomeForm homeForm, @Validated LoginForm loginForm, HttpServletRequest httpServletRequest, Model model
+            ,BindingResult bindingResult, RedirectAttributes redirectAttributes){
+        Home home = new Home();
+        home.setNum(homeForm.getNum());
+        home.setTitle(homeForm.getTitle());
+        home.setContent(homeForm.getContent());
+        home.setUser_name(homeForm.getUser_name());
+        home.setUser_time(Timestamp.valueOf(LocalDateTime.now()));
+        home.setId(homeForm.getId());
+        home.setPsw(homeForm.getPsw());
+        home.setEmail(homeForm.getEmail());
+
+        if(!bindingResult.hasErrors()){
+            HttpSession session = httpServletRequest.getSession();
+            Optional<Home> id = service.selectOneByHomeId(loginForm.getId(),loginForm.getPsw());
+            loginForm.setNum(loginForm.getNum());
+            session.setAttribute("user",loginForm);
+            service.updateMember(home);
+            System.out.println("작성했음");
+        }else {
+            redirectAttributes.addFlashAttribute("msg","오류");
+            System.out.println("오류생김");
+            return "redirect:boardPg";
+        }
+
+        return "boardPg";
     }
 //글쓰기
 
